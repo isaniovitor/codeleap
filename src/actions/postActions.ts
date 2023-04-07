@@ -39,7 +39,7 @@ export const addPost = (post: PostData) => async (dispatch) => {
 
     if (response.status >= 200 && response.status < 300) {
       dispatch(addPostSuccess());
-      toast.success('Operação concluída com sucesso!');
+      toast.success('Operation completed successfully!');
 
       dispatch(getPosts());
     }
@@ -55,7 +55,7 @@ export const editPost = (id: number, post: PostData) => async (dispatch) => {
 
     if (response.status >= 200 && response.status < 300) {
       dispatch(editPostSuccess());
-      toast.success('Operação concluída com sucesso!');
+      toast.success('Operation completed successfully!');
 
       dispatch(getPosts());
     }
@@ -71,7 +71,7 @@ export const deletePost = (id: number) => async (dispatch) => {
 
     if (response.status >= 200 && response.status < 300) {      
       dispatch(deletePostSuccess());
-      toast.success('Operação concluída com sucesso!');
+      toast.success('Operation completed successfully!!');
 
       dispatch(getPosts());
     }

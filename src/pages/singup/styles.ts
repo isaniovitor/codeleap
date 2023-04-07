@@ -34,7 +34,7 @@ export const Container = styled.main<ContainerProps>`
 export const Form = styled(unform)`
   display: flex;
   flex-direction: column;
-  width: 31.25rem;
+  width: min(31.25rem, 80%);
   height: fit-content;
   background-color: #fff;
   border-radius: 1rem;

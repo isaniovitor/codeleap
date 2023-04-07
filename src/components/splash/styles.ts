@@ -29,7 +29,7 @@ export const Container = styled.div<ContainerProps>`
   animation: ${({ loading }) => !loading ? css`${fadeOut} 1s ease-in-out forwards` : 'none'};
 
   > img {
-    width: 37.969rem;
-    height: 10.438rem;
+    width: min(37.969rem, 80%);
+    height: min(10.438rem, 100%);
   }
 `;
